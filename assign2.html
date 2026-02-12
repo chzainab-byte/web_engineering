@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<title>BSSE-6A Marks Table</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      font-size: 16px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    /* Column colors */
+    .oop-assign { background-color: #fff3b0; }
+    .oop-quiz { background-color: #f7b2b7; }
+    .dsa-assign { background-color: #a8e6cf; }
+    .dsa-quiz { background-color: #a0c4ff; }
+    .final-num { background-color: #ffa94d; }
+    .total { background-color: #70e000; font-weight: bold; }
+
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="3">BSSE-6A</th>
+        <th colspan="4">Subject</th>
+        <th rowspan="3">Final</th>
+      </tr>
+      <tr>
+        <th colspan="2">OOP</th>
+        <th colspan="2">DSA</th>
+      </tr>
+      <tr>
+        <th>Assignment</th>
+        <th>Quiz</th>
+        <th>Assignment</th>
+        <th>Quiz</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td class="oop-assign">10</td>
+        <td class="oop-quiz">15</td>
+        <td class="dsa-assign">10</td>
+        <td class="dsa-quiz">15</td>
+        <td class="final-num">70</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="oop-assign">8</td>
+        <td class="oop-quiz">4</td>
+        <td class="dsa-assign">8</td>
+        <td class="dsa-quiz">7</td>
+        <td class="final-num">60</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="oop-assign">5</td>
+        <td class="oop-quiz">4</td>
+        <td class="dsa-assign">8</td>
+        <td class="dsa-quiz">5</td>
+        <td class="final-num">75</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="oop-assign">4</td>
+        <td class="oop-quiz">2</td>
+        <td class="dsa-assign">3</td>
+        <td class="dsa-quiz">1</td>
+        <td class="final-num">68</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td class="oop-assign">2</td>
+        <td class="oop-quiz">6</td>
+        <td class="dsa-assign">1</td>
+        <td class="dsa-quiz">7</td>
+        <td class="final-num">74</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td class="oop-assign">7</td>
+        <td class="oop-quiz">4</td>
+        <td class="dsa-assign">7</td>
+        <td class="dsa-quiz">3</td>
+        <td class="final-num">45</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="total">
+        <td>Total</td>
+        <td colspan="2">71</td>
+        <td colspan="2">75</td>
+        <td>392</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

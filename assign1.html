@@ -1,0 +1,317 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <title>Assignment#01</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            padding: 20px;
+        }
+
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+
+        .leftcont {
+            width: 280px;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color: whitesmoke;
+            margin-bottom: 20px;
+        }
+
+        .Profile {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 10px;
+            background: #c6f60b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .Nm {
+            margin-bottom: 20px;
+        }
+
+        .leftin1 {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 15px 0;
+            background: #fff;
+        }
+
+        .contin {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #333;
+            border-top: 1px solid #eee;
+        }
+
+        .contin:first-child {
+            border-top: none;
+            /* no line before the first row */
+        }
+
+        .contin span {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .contin .green {
+            color: green;
+            font-weight: 600;
+        }
+
+
+
+
+        .btn1,
+        .btn2,
+        .link {
+
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .link {
+            color: green;
+            text-align: center;
+        }
+
+        .btn2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+
+        .icon-stack .fa-star {
+            color: gold;
+            font-size: 18px;
+        }
+
+        .icon-stack .fa-plus {
+            position: absolute;
+            top: 3px;
+            left: 5px;
+            font-size: 10px;
+            color: green;
+        }
+
+
+        .rightcontainer {
+            flex: 1;
+            padding: 30px;
+            background-color: whitesmoke;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            margin-left: 20px;
+
+        }
+
+        .form {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+
+        .form2 {
+            margin-top: 10px;
+        }
+
+        .btnup {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: green;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .btnup i {
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="leftcont">
+            <div class="Profile">Profile Picture</div>
+            <h3 class="Nm">Name</h3>
+
+            <div class="leftin1">
+                <span class="green">56</span>
+            </div>
+            <div class="contin">
+                <span>Product Sale</span>
+                <span>32</span>
+            </div>
+            <div class="contin">
+                <span>Demo Text</span>
+                <span>11</span>
+            </div>
+        </div>
+
+        <div class="contin">
+            <span>Product Store</span>
+            <button class="btn1">View Public Profile</button>
+            <a href="https://www.viddoe.com/user" class="link">www.viddoe.com/user</a>
+            <button class="btn2"><span class="icon-stack">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-plus"></i>
+                </span>Favorites
+            </button>
+
+
+        </div>
+
+        <div class="rightcontainer">
+            <form>
+                <div class="form">
+                    <div class="content">
+                        <label>First Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="content">
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="content">
+                        <label>Phone Number</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="content">
+                        <label>Email Address</label>
+                        <input type="email">
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="content">
+                        <label>Address</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="content">
+                        <label>City</label>
+                        <select>
+                            <option>Select City</option>
+                            <option>New York</option>
+                            <option>London</option>
+                            <option>Tokyo</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form">
+                    <div class="content">
+                        <label>Post Code</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form">
+                        <label>Country</label>
+                        <select>
+                            <option>Select Country</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>Japan</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="form2">
+                    <button type="submit" class="btnup">
+                        <i class="fa fa-refresh"></i> Update
+                    </button>
+                </div>
+
+
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
